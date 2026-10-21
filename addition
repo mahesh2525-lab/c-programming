@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+int x=5,y=10,z;
+z=x+y;
+printf("addition of x and y is %d",z);
+return 0;
+}
