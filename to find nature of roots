@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+
+    printf("Enter a, b and c: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a == 0) {
+        printf("Not a quadratic equation.");
+        return 0;
+    }
+
+    d = b * b - 4 * a * c;
+
+    if (d > 0) {
+        printf("Roots are real and distinct.");
+    } else if (d == 0) {
+        printf("Roots are real and equal.");
+    } else {
+        printf("Roots are complex.");
+    }
+
+    return 0;
+}
